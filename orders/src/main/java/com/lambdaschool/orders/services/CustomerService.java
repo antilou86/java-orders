@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service(value = "customerService")
+
 public interface CustomerService {
 
     //defines base methods for search and crud functionality

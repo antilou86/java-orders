@@ -4,12 +4,14 @@ import com.lambdaschool.orders.models.Customer;
 import com.lambdaschool.orders.models.Order;
 import com.lambdaschool.orders.repositories.CustomersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service(value = "customerService")
 public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomersRepository custrepos;
